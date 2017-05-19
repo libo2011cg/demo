@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,
+     user-scalable=no, width=device-width, minimal-ui" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>我的闪送</title>
+	<link rel="stylesheet" href="../css/style.css">
+	<script src='../js/utils/adaptive.js'></script>
+	<script src='../js/zepto/zepto.min.js'></script>
+</head>
+<body>
+<!--<header class="backed-header row">-->
+    <!--<a class="backed-btn" href="">-->
+       <!--<img src="images/backed.png">-->
+    <!--</a>-->
+    <!--<div class="header-txt">我的闪送</div>-->
+<!--</header>-->
+<div class="center clear bt">
+    <div class="deed">作为闪送员的你</div>
+    <div class="big-bd">
+       <img src="../images/big-bd.jpg">
+    </div>
+    <div class="deed bm">作为顶梁柱的你</div>
+    <div class="deed safeguard">需要一份保险保障</div>
+    <div class="defend clear ">
+       <img src="../images/guard-v2.png">
+    </div>
+    <div class="familiar"><a href="faq.html"><span>常见问题</span><span><img src="../images/tiaozhuan.png"></span></a></div>
+    <div class="two-dime-code" style="text-align:center; padding-left:0;">
+        <p class="consult">微信搜索“量子保”了解更多信息</p>
+        <div class="clear">
+            <div class="img-dv">
+                <img src="../images/two-dime-code.png" alt="">
+            </div>
+            <p style="color:#53ABCF;">量子保公众号：lzb-tech</p>
+        </div>
+    </div>
+    <div class="button red"><a href="generate_policy.html">我要参加</a></div>
+    <div class="button space"><a href="">我要分享</a></div>
+</div>
+<script>
+   $(document).ready(function(e) {
+	   $('.space').click(function(){
+			$(this).addClass('bianse')
+	   })
+	   $('.familiar').click(function(){
+			$(this).addClass('bai')
+	   })
+	   $('.red').click(function(){
+			$(this).addClass('hong')
+	   })
+   });
+</script>
+</body>	
+</html>

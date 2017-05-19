@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,
+     user-scalable=no, width=device-width, minimal-ui" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>确认支付</title>
+	<link rel="stylesheet" href="../css/style.css">
+	<script src='../js/utils/adaptive.js'></script>
+	<script src='../js/zepto/zepto.min.js'></script>
+</head>
+<body>
+<!--<header class="backed-header row">-->
+    <!--<a class="backed-btn" href="payment_fail.html">-->
+        <!--<img src="images/backed.png"> -->
+    <!--</a>-->
+    <!--<div class="header-txt">确认支付</div>-->
+     <!--<a class="backed-btn" href="">-->
+    <!--</a>-->
+<!--</header>-->
+<div class="center clear bt">
+    <div class="albedo clear bm">
+         <div class="boxkuai bm ">
+               <div class="disease">守护者重疾险</div>
+         </div>
+         <div class="boxkuai validity1">
+               <div class="sum"><i>保障期限:</i><i>2016-12-12</i><i>至</i><i>2016-12-12</i><i>(1年)</i></div>
+               <div class="sum"><i>支付金额:</i><i class="jine">365元</i></div>
+         </div>
+    </div>
+    <div class="button xubao"><img src="../images/zhifu.png"><a href="">支付宝支付</a></div>
+</div>
+</body>
+<script>
+    $(document).ready(function(e) {
+        $('.xubao').click(function(){
+			$(this).addClass('bianse')
+		})
+    });
+</script>	
+</html>

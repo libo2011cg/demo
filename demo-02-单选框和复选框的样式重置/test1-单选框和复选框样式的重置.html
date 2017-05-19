@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*复选框*/
+        input[type='checkbox']{
+            display: none;
+        }
+        input[type='checkbox'] + label:before {
+            content: '';
+            display: inline-block;
+            vertical-align: middle;
+            width: 16px;
+            height: 16px;
+            margin-right: 10px;
+            margin-top: -2px;
+            background-image: url("course-uncheck.png");
+            cursor: pointer;
+        }
+        input[type='checkbox']:checked + label:before {
+            background-image: url("course-checked.png");
+        }
+
+        /*单选钮*/
+        input[type='radio']{
+            display: none;
+        }
+        input[type='radio'] + label:before {
+            content: '';
+            display: inline-block;
+            vertical-align: middle;
+            width: 16px;
+            height: 16px;
+            margin-right: 10px;
+            margin-top: -2px;
+            background-image: url("radio.png");
+            cursor: pointer;
+        }
+        input[type='radio']:checked + label:before {
+            background-image: url("radio-checked.png");
+        }
+    </style>
+</head>
+<body>
+
+<div class="box1">
+    <input type="radio" id="zy" name="zyOrCss" checked><label for="zy">作业</label>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="cs" name="zyOrCss"><label for="cs">测试</label>
+</div>
+
+<div class="box2">
+    <input type="checkbox" id="1" name="zy"><label for="1">作业</label>
+    <br>
+    <input type="checkbox" id="2" name="zy"><label for="2">测试</label>
+</div>
+
+</body>
+</html>

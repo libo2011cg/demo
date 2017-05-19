@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,
+     user-scalable=no, width=device-width, minimal-ui" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>我的福利</title>
+	<link rel="stylesheet" href="../css/style.css">
+	<script src='../js/utils/adaptive.js'></script>
+	<script src='../js/zepto/zepto.min.js'></script>
+</head>
+<body>
+<!--<header class="backed-header row">-->
+    <!--<a class="backed-btn" href="">-->
+       <!--<img src="images/backed.png">-->
+    <!--</a>-->
+    <!--<div class="header-txt">我的福利</div>-->
+<!--</header>-->
+<div class="center clear bm">
+    <div class="my-guarantee">我的保单</div>
+    <div class="title">守护者重疾险<img src="../images/custom-made-v2.png">
+        <div class="guarantee-num">
+            <span class="left">保单号：</span>
+            <span class="right">LZB12345678901234567</span>
+        </div>
+    </div>
+
+    <ul class="means">
+        <li><span class="beibao">被保险人：</span><span>李四</span></li>
+        <li><span class="beibao">保额：</span><span>10万</span></li>
+        <li><span class="beibao">保障期限：</span>
+            <span class="xiangzuo">2016-12-12至2016-12-12(1年)</span>
+        </li>
+        <li><span class="beibao">保费共计</span><span>365元</span></li>
+    </ul>
+    <div class="guarantee">
+        <img class="hide" src="images/guarantee.png">
+        <img  src="../images/audit-ing.png">
+    </div>
+</div>
+<div class="familiar top">
+    <a class="bm" href="policy_scope.html"><span>保障范围</span><span><img src="../images/tiaozhuan.png"></span></a>
+    <a class="bm" href=""><span>查看保险条款</span><span><img src="../images/tiaozhuan.png"></span></a>
+    <a href="faq.html"><span>常见问题</span><span><img src="../images/tiaozhuan.png"></span></a>
+</div>
+<div class="button red height"><a href="settlement_of_claims.html">我要理赔</a></div>
+<div class="button space height"><a href="continue_policy.html">我要续保</a></div>
+<div class="days">已为您保障<i>102</i>天，还有<i>38</i>天到期</div>
+<div class="preact">提前续保，保障不断</div>
+<script>
+   $(document).ready(function(e) {
+	   $('.space').click(function(){
+			$(this).addClass('bianse')
+	   })
+	   $('.familiar a').click(function(){
+			$(this).addClass('bai')
+	   })
+	   $('.red').click(function(){
+			$(this).addClass('hong')
+	   })
+   });
+</script>
+</body>	
+</html>

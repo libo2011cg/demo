@@ -1,0 +1,138 @@
+.layout {
+    position: relative;
+    border: 1px solid #4FD492;
+    background-color: #4FD492;
+}
+.top-img {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: url(../images/top-2.png) no-repeat;
+    background-size: 100%;
+    z-index: 100;
+}
+.main {
+    border: 1px solid transparent;
+    margin-top: 3.2rem;
+    margin-bottom: 1.3rem;
+}
+.main .price {
+    position: relative;
+    z-index: 200;
+    font-size: 1.1rem;
+    width: 100%;
+    text-align: center;
+    color: #44C08C;
+    font-weight: 400;
+}
+.price .price-icon {
+    font-size: 0.5rem;
+    margin-right: 0.15rem;
+}
+.price .price-num {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.main .validity {
+    position: relative;
+    z-index: 200;
+    width: 100%;
+    text-align: center;
+    color: #9E9E9E;
+}
+.main .validity p {
+    height: 0.4rem;
+}
+.main .into-account {
+    position: relative;
+    margin-top: 1rem;
+    z-index: 200;
+    width: 100%;
+    text-align: center;
+    color: #F9FDFB;
+}
+.into-account p {
+    height: 0.4rem;
+    line-height: 0.4rem;
+}
+.into-account p .account {
+    color: #EFFE29;
+}
+.into-account p .modification {
+    color: #EFFE29;
+    text-decoration: underline;
+}
+.buy {
+    position: relative;
+    margin-top: 0.4rem;
+    z-index: 200;
+    width: 100%;
+    text-align: center;
+}
+.buy a {
+    display: inline-block;
+    width: 44%;
+    height: 1.2rem;
+    background: url(../images/btn-2.png) no-repeat;
+    background-size: 100%;
+}
+.activity-rule {
+    position: relative;
+    margin-top: 0.6rem;
+    z-index: 200;
+    width: 100%;
+    padding: 0 0.6rem;
+    color: #e3f5eb;
+}
+.activity-rule .rule-title {
+    position: absolute;
+    width: 1.8rem;
+    text-align: center;
+    left: 50%;
+    margin-left: -0.9rem;
+    top: -0.2rem;
+    font-size: 0.32rem;
+    font-weight: 500;
+}
+.activity-rule .rule-top-line-l,
+.activity-rule .rule-top-line-r{
+    width: 37%;
+    height: 1px;
+    background-color: rgba(255,255,255,0.6);
+}
+.activity-rule .rule-top-line-r {
+    float: right;
+}
+.activity-rule .rule-bottom-line {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255,255,255,0.6);
+}
+.activity-rule .rule-content {
+    padding: 0.5rem 0;
+    line-height: 0.5rem;
+}
+.logo {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 200;
+    width: 100%;
+    height: 1.3rem;
+    line-height: 1.3rem;
+    text-align: center;
+}
+.logo img {
+    width: 30%;
+}
+.floor {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 3rem;
+    background: url(../images/floor_bg.png) no-repeat;
+    background-size: 100%;
+    z-index: 100;
+}

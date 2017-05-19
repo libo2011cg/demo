@@ -1,0 +1,18 @@
+{
+  "jquery-3.1.1.min.js": "jquery-3-feda3bc821.1.1.min.js",
+  "jquery.form.3.51.0.min.js": "jquery-d75815a5c8.form.3.51.0.min.js",
+  "selector/main.js": "selector/main-9dd91edf14.js",
+  "selector/selector.js": "selector/selector-cee200ea36.js",
+  "selector/touch.min.js": "selector/touch-395db416e7.min.js",
+  "swiper/swiper.jquery.js": "swiper/swiper-c8e5965d33.jquery.js",
+  "swiper/swiper.jquery.min.js": "swiper/swiper-430c40446b.jquery.min.js",
+  "swiper/swiper.jquery.umd.js": "swiper/swiper-f78d75b593.jquery.umd.js",
+  "swiper/swiper.jquery.umd.min.js": "swiper/swiper-f78de0d894.jquery.umd.min.js",
+  "swiper/swiper.js": "swiper/swiper-1a9ee8d139.js",
+  "swiper/swiper.min.js": "swiper/swiper-55c6c84808.min.js",
+  "utils/adaptive.js": "utils/adaptive-814bcddcd3.js",
+  "utils/ajax.js": "utils/ajax-66e1a739e4.js",
+  "utils/common.js": "utils/common-eb1c954e83.js",
+  "utils/widget.js": "utils/widget-89d0370c1e.js",
+  "zepto/zepto.min.js": "zepto/zepto-44f2895e84.min.js"
+}

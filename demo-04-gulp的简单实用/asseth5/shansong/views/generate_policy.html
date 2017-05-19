@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,
+     user-scalable=no, width=device-width, minimal-ui" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>生成保单</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/generate_policy/generate_policy.css">
+    <link rel="stylesheet" href="../css/selector/selector.css">
+    <script src='../js/utils/adaptive.js'></script>
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../js/selector/touch.min.js"></script>
+    <script src="../js/selector/selector.js"></script>
+    <script src="../js/selector/main.js"></script>
+    <style>
+        .head {
+            border-bottom: 1px solid #E0E5E5
+        }
+        .widgetSelectorSelected {
+            font-size: 0.33rem;
+            color: #428BD3;
+            height: 0.9rem;
+            line-height: 0.9rem;
+        }
+        .widgetSelectorTop {
+            width: 50%;
+            left: 25%;
+        }
+        .widgetSelectorBottom {
+            width: 50%;
+            left: 25%;
+        }
+        .widgetSelectorBody div {
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body style="height: 100%;">
+<!--<header class="backed-header row">-->
+<!--<a class="backed-btn" href="send_flash.html">-->
+<!--<img src="images/backed.png">-->
+<!--</a>-->
+<!--<div class="header-txt">生成保单</div>- ->
+<!--</header>-->
+<div class="head">
+    <div class="fl back"><a href="javascript:;">返回保单</a></div>
+    <div class="center">确认保单</div>
+</div>
+<div class="center clear bt">
+    <div class="welfare  hangshou">投保人/被保人信息</div>
+    <ul class="classify">
+        <li>
+            <i>手机号码:</i>
+            <i class="right xiangzuo item-inp">18310559634</i>
+        </li>
+        <li>
+            <i>姓名:</i>
+            <input type="text" class="right xiangzuo1 item-inp" value="利斯凡">
+        </li>
+        <li>
+            <i>身份证:</i>
+            <input type="text" class="right xiangzuo1 item-inp" value="131234567812341633">
+        </li>
+    </ul>
+    <div class="check">
+        <img src="../images/tanhao.png">请仔细核对姓名和身份证信息，且确保是本人投保。
+    </div>
+    <div class="welfare  hangshou shangbian0">保险信息</div>
+    <ul class="classify">
+        <li><i>保额：</i><i class="right">10万</i></li>
+        <li><i>保费：</i><i class="right">1元/天</i></li>
+        <li>
+            <div id="guarantee-time">
+                <i>保障期限:</i>
+                <span class="data1 xiangzuo" id="selected-time">2016-02-18至2016-02-18(1年)</span>
+                <i class="side"><img src="../images/rignt.png"></i>
+            </div>
+        </li>
+        <li class="special"><i>保费共计:</i><i class="right transfer">365元</i></li>
+    </ul>
+</div>
+<div class="button"><img src="../images/zhifu.png"><a>支付宝支付</a></div>
+<div class="illness read " style="width: 100%;">
+    <input type="checkbox" checked="checked" id="checkbox-3-3" class="tubiao" /><label for="checkbox-3-3"></label>
+    我已阅读
+    <span><a href="">《投保须知》</a></span>和<span><a href="">《健康告知》</a></span>和<span><a href="">《保险条款》</a></span>
+</div>
+<div class="mask hide"></div>
+<div class="loading hide">
+    <img src="../images/1.gif">
+</div>
+<div class="Obox hide">
+    <div class="box-top">您的支付是否成功？</div>
+    <div class="box-bottom">
+        <div class="box-bottom1" id="pay-fail">遇到问题</div>
+        <div class="box-bottom1 box-bottom2" id="pay-success">支付成功</div>
+    </div>
+</div>
+
+<!--遮罩-->
+<div class="shade" id="shade"></div>
+
+<script>
+    $(document).ready(function(e) {
+        $('.button').click(function(){
+            $('.mask').removeClass('hide');
+            $('.Obox').removeClass('hide');
+            $(this).addClass('bianse')
+        });
+
+        $('.read span a').click(function(){
+            $(this).addClass('lan')
+        });
+
+        /*跳转到支付失败页面*/
+        $('#pay-fail').click(function () {
+            window.location.href='payment_fail.html';
+        });
+
+        /*跳转到支付成功页面*/
+        $('#pay-success').click(function () {
+            window.location.href='payment_success.html';
+        });
+    });
+</script>
+</body>
+</html>

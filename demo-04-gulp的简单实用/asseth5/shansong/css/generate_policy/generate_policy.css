@@ -1,0 +1,22 @@
+.item-inp {
+    /*line-height: .88rem;*/
+}
+.select-item-ul {
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+    height: 0rem;
+    opacity: .2;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: auto;
+    overflow: auto;
+    z-index: 100;
+    color: #444444;
+    background-color: #fff;
+    font-family: 'microsoft yahei';
+}
+.select-item-ul > li {
+    height: .8rem;line-height: .8rem;border-bottom: 1px solid #ccc;text-align: center;padding-left: 0;
+}
