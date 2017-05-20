@@ -1,6 +1,6 @@
 .layout {
     position: relative;
-    border: 1px solid #4CCE8D;
+    overflow: hidden;
     background-color: #4CCE8D;
 }
 .top-img {
